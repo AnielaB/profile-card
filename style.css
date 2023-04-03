@@ -1,0 +1,140 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  html{
+    font-size: 100%;
+  }
+ 
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-size: inherit;
+  }
+
+  /* TYPOGRAPHY */
+
+body{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+    background-color: var(--dark-cyan);
+    color: var(--very-dark-desaturated-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-top{
+    position: absolute;
+    background-image: url("./images/bg-pattern-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -700px;
+    left: -550px;
+}
+
+.bg-bottom{
+    position: absolute;
+    background-image: url("./images/bg-pattern-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    bottom: -628px;
+    right: -650px;
+}
+
+.card{
+    background-color: whitesmoke;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 6px solid whitesmoke;
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    margin-top: 4.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 span{
+    font-weight: 400;
+    margin-left: 0.25em;
+}
+
+.city{
+    font-size: 0.95rem;
+    margin-bottom: 1.5em;
+}
+
+hgroup{
+    border-bottom: 1px solid lightgray;
+}
+
+h1 span,
+.city,
+.category{
+    color: var(--dark-grayish-blue);
+}
+
+.num{
+    font-weight: 700;
+    margin-bottom: 0.25em;
+}
+
+.category{
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+}
+
+.flex-group{
+    padding: 1.5em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 900px){
+    .bg-top{
+        top: -550px;
+        left: -280px;
+    } 
+    .bg-bottom{
+        bottom: -630px;
+        right: -250px;
+    } 
+}
