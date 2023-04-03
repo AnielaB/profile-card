@@ -25,7 +25,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://frabjous-crostata-61eb21.netlify.app
 
 ## My process
 
